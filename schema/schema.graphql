@@ -1,0 +1,16 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  cars: [Car!]!
+}
+
+type Mutation {
+  addCar (
+    name: String!
+    price: Int!
+    data: [Map!]!
+  ): Car!
+}

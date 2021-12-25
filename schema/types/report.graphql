@@ -1,0 +1,6 @@
+type Report {
+  name: String!
+  description: String
+  data: [Map!]!
+  created_at: String!
+}
